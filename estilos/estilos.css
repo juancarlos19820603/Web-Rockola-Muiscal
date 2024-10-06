@@ -1,0 +1,133 @@
+body {
+    background: url(../imagenes/rock.webp); /* Establece la imagen de fondo del body desde la carpeta imágenes */
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el área del navegador */
+    text-align: center; /* Centra el texto dentro del body */
+    display: flex; /* Utiliza flexbox para permitir un diseño más flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    min-height: 100vh; /* Asegura que el body ocupe al menos el alto completo de la ventana del navegador */
+    flex-direction: column; /* Organiza los elementos secundarios en una columna */
+}
+
+
+
+/* Estilo del logo */
+.logo {
+    width: 50px; /* Establece el ancho del logo a 50px */
+    height: auto; /* Mantiene la relación de aspecto del logo */
+    align-self: flex-start; /* Alinea el logo al inicio (izquierda) del contenedor flex */
+    margin: -20px; /* Añade un margen negativo para separarlo visualmente del contenedor */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex; /* Utiliza flexbox para la barra de navegación */
+    align-items: center; /* Centra los elementos verticalmente en la barra */
+    justify-content: space-between; /* Espacia los elementos a los extremos de la barra */
+    padding: 10px; /* Añade espacio interno (padding) alrededor de la barra */
+    background-color: rgba(0, 0, 0, 0.361); /* Establece un fondo negro semi-transparente para la barra de navegación */
+}
+
+.navbar ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen por defecto de la lista */
+    padding: 0; /* Elimina el padding por defecto de la lista */
+    display: flex; /* Alinea los elementos de la lista en una fila */
+}
+
+.navbar li {
+    margin-left: 20px; /* Añade un espacio de 20px entre los elementos de la lista */
+}
+
+.navbar a {
+    color: white; /* Establece el color del texto de los enlaces a blanco */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 18px; /* Establece el tamaño de fuente de los enlaces a 18px */
+}
+
+.navbar a:hover {
+    color: green; /* Cambia el color del texto a verde cuando el ratón pasa sobre el enlace */
+}
+
+/* Línea verde que separa el header del cuerpo */
+.separator {
+    border: 0; /* Elimina el borde de la línea */
+    height: 3px; /* Establece la altura de la línea a 3px */
+    background-color: rgba(0, 128, 0, 0.567); /* Establece el color de fondo de la línea a verde semi-transparente */
+    margin-top: 20px; /* Añade un margen superior de 20px para separar la línea del contenido superior */
+}
+
+h1, h2, h6 {
+    color: white; /* Establece el color del texto de los encabezados a blanco */
+    font-size: 30px; /* Establece el tamaño de fuente de los encabezados a 30px */
+    text-align: center; /* Centra el texto de los encabezados */
+}
+
+img {
+    border-radius: 100px; /* Hace que las imágenes tengan bordes redondeados con un radio de 100px */
+}
+
+p {
+    color: white; /* Establece el color del texto de los párrafos a blanco */
+    font-size: 15px; /* Establece el tamaño de fuente de los párrafos a 15px */
+    background-color: rgba(0, 0, 0, 0.415); /* Establece un fondo negro semi-transparente para los párrafos */
+}
+
+table {
+    width: 50%; /* Ajusta el ancho de la tabla al 50% de la pantalla */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas para que no haya espacio entre ellos */
+    margin: 20px auto; /* Centra la tabla y añade un margen superior e inferior de 20px */
+}
+
+th, td {
+    color: white; /* Establece el color del texto en las celdas a blanco */
+    padding: 10px; /* Añade un padding de 10px dentro de las celdas */
+    text-align: left; /* Alinea el texto dentro de las celdas a la izquierda */
+    border-bottom: 1px solid #ddd; /* Añade un borde inferior claro a las celdas */
+    background-color: rgba(0, 0, 0, 0.319); /* Establece un fondo negro semi-transparente para las celdas */
+}
+
+tr:hover {
+    background-color: #6fff0162; /* Cambia el fondo de la fila al pasar el ratón sobre ella */
+    color: black; /* Cambia el color del texto a negro al pasar el ratón sobre la fila */
+}
+
+a {
+    color: #ffffff; /* Establece el color del texto de los enlaces a blanco */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+a:hover {
+    color: #ffffff; /* Establece el color del texto de los enlaces a blanco al pasar el ratón sobre ellos */
+    text-decoration: underline; /* Añade un subrayado al texto de los enlaces al pasar el ratón sobre ellos */
+}
+
+/* Añadir animación de rotación a la imagen */
+.rotar {
+    animation: giro 10s linear infinite; /* Aplica la animación 'giro' durante 10 segundos de manera lineal y en bucle infinito */
+    display: block; /* Hace que el elemento se muestre como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin-top: 50px; /* Añade un margen superior de 50px */
+}
+
+/* Definición de la animación de giro */
+@keyframes giro {
+    from {
+        transform: rotate(0deg); /* Comienza la rotación desde 0 grados */
+    }
+    to {
+        transform: rotate(360deg); /* Termina la rotación en 360 grados (completa) */
+    }
+}
+.manowar {
+    max-width: 600px; /* Limita el ancho del texto a 600px */
+    margin: 0 auto; /* Centra el texto horizontalmente */
+    text-align: justify; /* Justifica el texto para un aspecto más ordenado */
+    color: white; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+.img-manowar{
+    margin: 20px;
+}
+

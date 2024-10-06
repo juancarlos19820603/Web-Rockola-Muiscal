@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="en"> <!-- Indica que el idioma principal de la página es inglés -->
+<head> <!-- Sección de cabecera de la página, donde se incluyen metadatos -->
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres en UTF-8 para que se muestren correctamente caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive, adaptándose a la pantalla de cualquier dispositivo -->
+    <title>Rockola</title> <!-- Título que aparecerá en la pestaña del navegador -->
+    <link rel="stylesheet" href="estilos/estilos.css"> <!-- Enlaza el archivo externo de estilos CSS que contiene las reglas de diseño -->
+    <link rel="icon" href="imagenes/guitarra.png" type="image/x-icon"> <!-- Define el icono que se muestra en la pestaña del navegador (favicon) -->
+</head>
+
+<body> <!-- Inicio del contenido visible en la página -->
+     
+    <!-- Encabezado (header) de la página -->
+    <header>
+        <div class="header-content"> <!-- Contenedor para el contenido del encabezado, agrupa los elementos de la cabecera -->
+            <!-- Barra de navegación -->
+            <nav class="navbar"> <!-- Elemento de navegación que contiene enlaces a otras secciones de la página -->
+
+                <ul> <!-- Lista no ordenada que contiene los elementos de la barra de navegación -->
+                    <img src="imagenes/guitarra blanca.png" alt="Logo Rockola" class="logo"> <!-- Muestra el logo de Rockola alineado a la izquierda -->
+                    <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de Inicio -->
+                    <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de Contacto -->
+                </ul>
+            </nav>
+        </div>
+        <hr class="separator"> <!-- Línea horizontal que separa el encabezado del contenido principal -->
+    </header>
+
+    <!-- Tabla de artistas -->
+    <table> <!-- Crea una tabla para organizar y mostrar la información de los artistas y sus redes sociales -->
+        <thead> <!-- Definición de la cabecera de la tabla -->
+            <tr> <!-- Fila de la cabecera -->
+                <th>Datos</th> <!-- Encabezado de la primera columna que muestra los datos del usuario -->
+                <th>Redes</th> <!-- Encabezado de la segunda columna que contiene los enlaces a las redes sociales -->
+            </tr>
+        </thead>
+        <tbody> <!-- Cuerpo de la tabla donde se mostrarán los datos -->
+            <tr> <!-- Fila de datos -->
+                <td>Nombre: Juan Carlos Londoño Álvarez</td> <!-- Celda que muestra el nombre del usuario -->
+                <td><a href="https://www.instagram.com/juancarlos.l.londono/" target="_blank">Instagram</a></td> <!-- Enlace a Instagram que se abre en una nueva pestaña -->
+            </tr>
+            <tr> <!-- Fila de datos -->
+                <td>Celular: 315 730 8007</td> <!-- Celda que muestra el número de celular del usuario -->
+                <td><a href="https://www.linkedin.com/in/juan-carlos-londo%C3%B1o-alvarez/" target="_blank">LinkedIn</a></td> <!-- Enlace a LinkedIn que se abre en una nueva pestaña -->
+            </tr>
+            <tr> <!-- Fila de datos -->
+                <td>Ciudad: Medellín</td> <!-- Celda que muestra la ciudad del usuario -->
+                <td><a href="https://www.facebook.com/juancarlos.l.londono" target="_blank">Facebook</a></td> <!-- Enlace a Facebook que se abre en una nueva pestaña -->
+            </tr>
+        </tbody>
+    </table>
+    
+    <img src="imagenes/nirvana.png" alt="Imagen vinilo" width="200px" height="200px" class="rotar"> <!-- Imagen que rota automáticamente (disco de Nirvana) con tamaño especificado -->
+    
+    <!-- Reproductor de audio -->
+    <iframe src="https://archive.org/embed/nirvanasmellsliketeenspirit_202002" width="500" height="60" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+    <br> <!-- Salto de línea para añadir espacio vertical -->
+
+    <!-- Pie de página (footer) -->
+    <footer> <!-- Sección de pie de página -->
+        <p>© 2024 Rockola. Todos los derechos reservados.</p> <!-- Texto de derechos de autor -->
+        <p><a href="">Juan Carlos Londoño</a> | <a href="terminos.html">315 730 8007</a></p> 
+    </footer>
+</body>
+</html> <!-- Fin del documento HTML -->
+

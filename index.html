@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="en"> <!-- Indica que el idioma principal de la página es inglés -->
+<head> <!-- Sección de cabecera de la página donde se incluyen metadatos -->
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 para que se muestren correctamente caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define que la página será responsive, adaptándose a diferentes tamaños de pantalla -->
+    <title>Rockola</title> <!-- Título que aparecerá en la pestaña del navegador -->
+    <link rel="stylesheet" href="estilos/estilos.css"> <!-- Enlace al archivo externo de estilos CSS para aplicar diseño a la página -->
+    <link rel="icon" href="imagenes/guitarra.png" type="image/x-icon"> <!-- Define el icono (favicon) que aparecerá en la pestaña del navegador -->
+</head>
+
+<body> <!-- Inicio del contenido visible de la página -->
+  
+    <!-- Encabezado (header) de la página -->
+    <header>
+        <div class="header-content"> <!-- Contenedor que agrupa el contenido del encabezado -->
+            <!-- Barra de navegación -->
+            <nav class="navbar"> <!-- Elemento de navegación que contiene enlaces a otras páginas o secciones -->
+                <ul> <!-- Lista no ordenada que contiene los enlaces de la navegación -->
+                    <img src="imagenes/guitarra blanca.png" alt="Logo Rockola" class="logo"> <!-- Logo de Rockola alineado a la izquierda -->
+                    <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de Inicio -->
+                    <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de Contacto -->
+                </ul>
+            </nav>
+        </div>
+        <hr class="separator"> <!-- Línea horizontal que separa el encabezado del contenido principal -->
+    </header>
+
+    <!-- Tabla de artistas con géneros musicales -->
+    <table> <!-- Tabla que muestra los géneros musicales y los artistas correspondientes -->
+        <thead> <!-- Cabecera de la tabla -->
+            <tr> <!-- Fila de la cabecera -->
+                <th>Género</th> <!-- Encabezado de la columna que indica el género musical -->
+                <th>Artista</th> <!-- Encabezado de la columna que indica el nombre del artista -->
+            </tr>
+        </thead>
+        <tbody> <!-- Cuerpo de la tabla donde se muestran los datos -->
+            <tr> <!-- Fila de datos -->
+                <td>Heavy Metal</td> <!-- Columna que muestra el género musical (Heavy Metal) -->
+                <td><a href="manowar.html">Manowar</a></td> <!-- Columna que muestra el artista (Manowar) con un enlace a su página -->
+            </tr>
+            <tr> <!-- Fila de datos -->
+                <td>Black Metal</td> <!-- Columna que muestra el género musical (Black Metal) -->
+                <td><a href="rotting.html">Rotting Christ</a></td> <!-- Columna que muestra el artista (Rotting Christ) con un enlace a su página -->
+            </tr>
+            <tr> <!-- Fila de datos -->
+                <td>Punk</td> <!-- Columna que muestra el género musical (Punk) -->
+                <td><a href="rancind.html">Rancid</a></td> <!-- Columna que muestra el artista (Rancid) con un enlace a su página -->
+            </tr>
+        </tbody>
+    </table>
+
+
+    <img src="imagenes/vecteezy_rock-and-roll-vinyl_.jpg" alt="Imagen vinilo" width="200px" height="200px" class="rotar"> <!-- Imagen de vinilo con tamaño de 200x200px y rotación (clase definida en CSS) -->
+
+    <br>
+    <!-- Reproductor de audio  -->
+    <iframe src="https://archive.org/embed/nirvanasmellsliketeenspirit_202002" width="500" height="60" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+    
+    <br> <!-- Salto de línea para agregar espacio vertical -->
+
+    <!-- Pie de página (footer) -->
+    <footer> <!-- Sección del pie de página -->
+        <p>© 2024 Rockola. Todos los derechos reservados.</p> <!-- Texto de derechos de autor -->
+        <p><a href="">Juan Carlos Londoño</a> | <a href="terminos.html">315 730 8007</a></p> 
+    </footer>
+
+</body>
+</html> <!-- Fin del documento HTML -->
+
