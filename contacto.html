@@ -6,6 +6,12 @@
     <title>Rockola</title> <!-- Título que aparecerá en la pestaña del navegador -->
     <link rel="stylesheet" href="estilos/estilos.css"> <!-- Enlaza el archivo externo de estilos CSS que contiene las reglas de diseño -->
     <link rel="icon" href="imagenes/guitarra.png" type="image/x-icon"> <!-- Define el icono que se muestra en la pestaña del navegador (favicon) -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('25Pp7SefaNCU_TImN')
+  </script>
 </head>
 
 <body> <!-- Inicio del contenido visible en la página -->
@@ -52,15 +58,40 @@
     
     <img src="imagenes/nirvana.png" alt="Imagen vinilo" width="200px" height="200px" class="rotar"> <!-- Imagen que rota automáticamente (disco de Nirvana) con tamaño especificado -->
     
-    <!-- Reproductor de audio -->
-    <iframe src="https://archive.org/embed/nirvanasmellsliketeenspirit_202002" width="500" height="60" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-    <br> <!-- Salto de línea para añadir espacio vertical -->
+    <form id="form" autocomplete="off">
+        <div class="field">
+          <label for="from_name">Nombre</label>
+          <input type="text" name="from_name" id="from_name" required autocomplete="off"> <!-- Deshabilitar autocompletado para este campo -->
+        </div>
+      
+        <div class="field">
+          <label for="email_id">Correo Electrónico</label>
+          <input type="email" name="email_id" id="email_id" required autocomplete="none"> <!-- Cambiar a "nope" para deshabilitar autocompletado -->
+        </div>
+        
+        <div class="field">
+          <label for="phone">Teléfono</label>
+          <input type="tel" name="phone" id="phone" required autocomplete="off"> <!-- Cambiar a "nope" para deshabilitar autocompletado -->
+        </div>
+      
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <input type="text" name="message" id="message" required autocomplete="off"> <!-- Cambiar a "nope" para deshabilitar autocompletado -->
+        </div>
+      
+        <input type="submit" id="button" value="Enviar Mensaje">
+      </form>
+      
+      
+      
 
     <!-- Pie de página (footer) -->
     <footer> <!-- Sección de pie de página -->
         <p>© 2024 Rockola. Todos los derechos reservados.</p> <!-- Texto de derechos de autor -->
         <p><a href="">Juan Carlos Londoño</a> | <a href="terminos.html">315 730 8007</a></p> 
     </footer>
+      <script src="formulario.js"></script>
+
 </body>
 </html> <!-- Fin del documento HTML -->
 
